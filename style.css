@@ -1,0 +1,83 @@
+:root {
+            --primary-color: #007bff;
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --accent-color: #2c2c2c;
+            --success-color: #28a745;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: var(--accent-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; color: #fff; font-size: 2.5em; }
+        .contact-info { margin-top: 10px; font-size: 0.9em; margin-bottom: 20px; }
+        .contact-info a { color: var(--primary-color); text-decoration: none; margin: 0 10px; }
+
+        /* Стили для кнопки скачивания */
+        .download-btn {
+            display: inline-block;
+            background-color: var(--success-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+        }
+        .download-btn i { margin-right: 8px; }
+
+        section { margin-bottom: 30px; }
+        h2 { color: var(--primary-color); border-left: 4px solid var(--primary-color); padding-left: 10px; text-transform: uppercase; font-size: 1.2em; }
+
+        .job { margin-bottom: 20px; }
+        .job-title { font-weight: bold; color: #fff; display: flex; justify-content: space-between; }
+        .tech-stack { font-style: italic; color: #888; font-size: 0.9em; margin-top: 5px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #3d3d3d;
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .job-title { flex-direction: column; }
+            .container { margin: 10px; }
+        }
